@@ -12,4 +12,4 @@ const render: RenderFunction = (ctx, render) => {
   render();
 };
 
-await start(manifest, { render });
+await start(manifest, { render, port: Deno.env.PORT || 8000 });
