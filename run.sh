@@ -1,4 +1,4 @@
-if [ "$NODE_ENV" = "production" ]; then
+if [ "$DENO_ENV" = "production" ]; then
   cd my-project
   deno task start
 else
